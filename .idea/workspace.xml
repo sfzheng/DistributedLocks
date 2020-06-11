@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5ee7334-5c76-4be5-acd2-952bd5c56134" name="Default Changelist" comment="" />
+    <list default="true" id="e5ee7334-5c76-4be5-acd2-952bd5c56134" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lock/config/ApplicationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lock/config/ApplicationBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lock/redis/RedisLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lock/redis/RedisLock.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JavaAutoRunManager">
     <enabled-run-configurations>
@@ -33,6 +39,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1cWeXZEGDEWLVJQgzDFreKac2SQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -131,7 +138,7 @@
       <workItem from="1591065078682" duration="14910000" />
       <workItem from="1591149654312" duration="11044000" />
       <workItem from="1591166437902" duration="8579000" />
-      <workItem from="1591237191667" duration="4713000" />
+      <workItem from="1591237191667" duration="5608000" />
     </task>
     <servers />
   </component>

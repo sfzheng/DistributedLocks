@@ -7,13 +7,11 @@
 package com.lock.config;
 
 import com.ecwid.consul.v1.ConsulClient;
-import com.ecwid.consul.v1.ConsulRawClient;
 import com.lock.zookeeper.ServerWatcher;
 import org.apache.curator.framework.CuratorFramework;
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;

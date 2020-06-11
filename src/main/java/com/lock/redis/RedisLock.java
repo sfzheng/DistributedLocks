@@ -55,7 +55,7 @@ public class RedisLock {
     @Around(value = "pointCut()")
     public Object around(ProceedingJoinPoint joinPoint) {
         RLock lock;
-        boolean lockAcquired = false;
+
         //1.获取到所有的参数值的数组
             Object[] args = joinPoint.getArgs();
             Signature signature = joinPoint.getSignature();
@@ -75,7 +75,6 @@ public class RedisLock {
                }catch (Throwable throwable) {
                    throwable.printStackTrace();
                }finally {
-                    lockAcquired = true;
                     stopWatch.stop();
                    log.info("一次用时：【{}】:[【{}】",stopWatch.getId(),stopWatch.getLastTaskTimeNanos());
                 }
@@ -84,7 +83,7 @@ public class RedisLock {
         } catch (Exception e) {
            log.error(e.getMessage(),e);
         } finally {
-            if (lock != null && lock.isHeldByThread(Thread.currentThread().getId())&&lockAcquired) {
+            if (lock != null && lock.isHeldByThread(Thread.currentThread().getId())) {
                 lock.unlock();
             }
         }
